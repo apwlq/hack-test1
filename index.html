@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick Astley - Never Gonna Give You Up (Official Music Video)</title>
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Rick Astley - Never Gonna Give You Up (Official Music Video)" />
+<!--    <meta property="og:description" content="A simple Vite project using TypeScript" />-->
+    <meta property="og:image" content="/hqdefault.jpg" />
+    <meta property="og:url" content="https://apwlq.github.com/hack-test1" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card (Optional, for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rick Astley - Never Gonna Give You Up (Official Music Video)" />
+<!--    <meta name="twitter:description" content="A simple Vite project using TypeScript" />-->
+    <meta name="twitter:image" content="/hqdefault.jpg" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* 높이를 100vh로 설정 */
+        margin: 0;
+        font-size: 3em;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        transition: background 1s;
+        padding: 10px;
+      }
+      h1 {
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        font-size: 1.2rem;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h1 style="color: #fff;">너 해킹된거야</h1>
+      <h2 style="color: #fff;">앱 다운로드 ← <strong>바이러스 아님</strong></h2>
+    </div>
+    <script>
+      const gradients = [
+        'linear-gradient(135deg, rgba(255, 0, 0, 0.7), rgba(255, 165, 0, 0.7))', // Red to Orange
+        'linear-gradient(135deg, rgba(255, 165, 0, 0.7), rgba(255, 255, 0, 0.7))', // Orange to Yellow
+        'linear-gradient(135deg, rgba(255, 255, 0, 0.7), rgba(0, 255, 0, 0.7))', // Yellow to Green
+        'linear-gradient(135deg, rgba(0, 255, 0, 0.7), rgba(0, 0, 255, 0.7))', // Green to Blue
+        'linear-gradient(135deg, rgba(0, 0, 255, 0.7), rgba(75, 0, 130, 0.7))', // Blue to Indigo
+        'linear-gradient(135deg, rgba(75, 0, 130, 0.7), rgba(148, 0, 211, 0.7))' // Indigo to Violet
+      ];
+      let index = 0;
+
+      function changeBackgroundColor() {
+        document.body.style.background = gradients[index];
+        index = (index + 1) % gradients.length;
+      }
+
+      setInterval(changeBackgroundColor, 100);
+    </script>
+  </body>
+</html>
